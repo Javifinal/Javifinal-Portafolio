@@ -1,0 +1,239 @@
+.cabecera{
+  height: 80px;
+  background-image: url('https://ugc.kn3.net/i/origin/http://media02.hongkiat.com/photoshop_metal/WireMesh.jpg');
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(255,255,255,1);
+    box-shadow: 10px 10px 5px 0px rgba(255,255,255,1);
+}
+
+.logo{
+  float: left;
+  padding:12px;
+}
+
+.logo h2{
+  color:white;
+}
+
+.menu, .registro{
+   float: right;
+   padding:22px;
+}
+
+.menu ul li{
+  list-style: none;
+  display: inline-flex;
+   padding-right: 18px;
+}
+
+.menu ul li a{
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+
+.menu ul li a:hover{
+   color: #F40C7D;
+   transition-duration: .25s;
+}
+
+.principal{  
+  height: 400px;
+  margin-top: 50px;
+  border: 1px solid black;
+  background-image: url('https://image.freepik.com/vector-gratis/cuatro-vacios-paginas-de-comic_1017-8315.jpg');
+  background-repeat: no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-box-shadow: 10px 10px 18px -1px rgba(0,0,0,0.64);
+    -moz-box-shadow: 10px 10px 18px -1px rgba(0,0,0,0.64);
+    box-shadow: 10px 10px 18px -1px rgba(0,0,0,0.64);
+}
+
+.principal h1{
+  text-align: center;
+  margin-top: 130px;
+  color: white;
+  font-family: Arial; 
+  font-size: 58px; 
+  text-shadow: 0px 0px 20px black;
+}
+
+
+.fila-2{
+  height: 200px;
+  margin-top: 80px;
+}
+
+.fila-2 h4, .fila-5 h4, .fila-6 h4{
+  text-align: center;
+  text-shadow:  0 1px 0 #ccc, 
+                0 2px 0 #c9c9c9,
+                0 3px 0 #bbb,
+                0 4px 0 #b9b9b9,
+                0 5px 0 #aaa,
+                0 6px 1px rgba(0,0,0,.1),
+                0 0 5px rgba(0,0,0,.1),
+                0 1px 3px rgba(0,0,0,.3),
+                0 3px 5px rgba(0,0,0,.2),
+                0 5px 10px rgba(0,0,0,.25),
+                0 10px 10px rgba(0,0,0,.2),
+                0 20px 20px rgba(0,0,0,.15);
+  font-family: Impact;
+  font-size: 35px;
+}
+
+.fila-2 a, .fila-5 a, .fila-6 a{
+  color:black;
+}
+
+.fila-2 p{
+  text-align: justify;
+  font-size: 18px;
+}
+
+.fila-3{
+  height: 200px;
+  margin-top: 50px;
+}
+
+.fila-3 img, .fila-4 img{
+  height: 200px;
+  width: 240px;
+}
+
+.fila-3:hover{
+  -webkit-transform:scale(1.4);transform:scale(1.4);
+  transition: .25s;
+}
+
+.fila-4{
+  height: 300px;
+}
+
+.fila-4 p{
+  text-align: center;
+  font-size: 38px;
+  padding-top: 25px;
+  padding-left: 10px;xº
+  font-family: Impact;
+}
+
+.fila-4 img:hover{
+  -webkit-transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+
+}
+
+.fila-5, .fila-6{
+  height: 50px;
+  margin-top: 180px;
+}
+
+.pie{
+  height: 80px;
+  background-image: url('https://ugc.kn3.net/i/origin/http://media02.hongkiat.com/photoshop_metal/WireMesh.jpg');
+}
+
+.registro p{
+  color: white;
+  padding: 5px;
+}
+
+
+
+
+/*Galeria con modal*/
+.galeria {
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+  list-style: none;
+  padding: 20px;
+  box-sizing: border-box;
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.galeria li {
+  margin: 5px;
+}
+
+.galeria img {
+  width: 150px;
+  height: 100px;
+}
+
+/*Estilos del modal*/
+
+.modal {
+  display: none;
+}
+
+.modal:target {
+  
+  display: block;
+  position: fixed;
+  background: rgba(0,0,0,0.8);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal h3 {
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.imagen {
+  width: 100%;
+  height: 50%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen a {
+  color: #fff;
+  font-size: 40px;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.imagen a:nth-child(2) {
+  margin: 0;
+  height: 100%;
+  flex-shrink: 2;
+}
+
+.imagen img {
+  width: 500px;
+  height: 100%;
+  max-width: 100%;
+  border: 7px solid #fff;
+  box-sizing: border-box;
+}
+
+.cerrar {
+  display: block;
+  background: #fff;
+  width: 25px;
+  height: 25px;
+  margin: 15px auto;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000;
+  padding: 5px;
+  border-radius: 50%;
+  line-height: 25px;
+}
